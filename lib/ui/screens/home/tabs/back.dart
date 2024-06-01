@@ -1,11 +1,17 @@
-import 'package:coffee_app/ui/home/widgets/standart_item.dart';
+import 'package:coffee_app/ui/screens/home/widgets/standart_item.dart';
 import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
 class BackItem extends StatelessWidget {
+  final String categorya;
   List<String> list;
   String name;
-  BackItem({super.key, required this.name, required this.list});
+  BackItem({
+    super.key,
+    required this.name,
+    required this.categorya,
+    required this.list,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -28,6 +34,7 @@ class BackItem extends StatelessWidget {
             list.length,
             (index) => StandartItem(
               id: list[index],
+              category: categorya,
             ),
           ),
         ),

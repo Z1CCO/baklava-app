@@ -1,11 +1,10 @@
 import 'dart:io';
-import 'package:coffee_app/ui/home/view/my_container.dart';
+import 'package:coffee_app/ui/screens/home/view/my_container.dart';
 import 'package:coffee_app/ui/my_text.dart';
 import 'package:coffee_app/widget/buy_and_publish.dart';
 import 'package:flutter/material.dart';
 
 String? category;
-
 
 // ignore: must_be_immutable
 class CreateNewItem extends StatefulWidget {
@@ -50,11 +49,7 @@ class _CreateNewItemState extends State<CreateNewItem> {
       onPressed: () {
         selected = index;
         category = text;
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(category ?? 'xato'),
-          ),
-        );
+
         setState(() {});
       },
       child: MyText(

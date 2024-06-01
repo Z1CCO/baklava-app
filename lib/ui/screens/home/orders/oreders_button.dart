@@ -1,6 +1,6 @@
-import 'package:coffee_app/ui/home/upload/upload_screen.dart';
+import 'package:coffee_app/ui/screens/home/upload/upload_screen.dart';
 import 'package:coffee_app/ui/my_text.dart';
-import 'package:coffee_app/ui/home/orders/orders.dart';
+import 'package:coffee_app/ui/screens/home/orders/orders.dart';
 import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable

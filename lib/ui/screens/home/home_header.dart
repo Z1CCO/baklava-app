@@ -27,7 +27,7 @@ class HomeHeader extends StatelessWidget {
               colorFilter: ColorFilter.mode(
                   Color.fromARGB(91, 158, 158, 158), BlendMode.srcOver),
               fit: BoxFit.cover,
-              image: AssetImage('assets/images/backgroundbaklava.avif'),
+              image: AssetImage('assets/images/baklavabackground.jpg'),
             ),
           ),
           child: const Row(

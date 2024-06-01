@@ -20,13 +20,17 @@ class MyButton extends StatelessWidget {
         width: double.infinity,
         child: ElevatedButton(
           style: ElevatedButton.styleFrom(
-              alignment: Alignment.center, backgroundColor: Colors.red),
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8)),
+              alignment: Alignment.center,
+              backgroundColor: Colors.red),
           onPressed: onTap,
           child: SizedBox(
             height: 60.0,
             child: Text(
               text,
               style: const TextStyle(
+                  height: 1.0,
                   fontSize: 30.0,
                   color: Colors.amber,
                   fontFamily: 'ConcertOne'),

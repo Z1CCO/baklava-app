@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
 class PlusMinus extends StatelessWidget {
+  VoidCallback? onTap;
   IconData? icon;
   PlusMinus({
     this.icon,
+    this.onTap,
     super.key,
   });
 
@@ -21,7 +23,7 @@ class PlusMinus extends StatelessWidget {
               side: const BorderSide(color: Colors.black, width: 2.0),
             ),
             backgroundColor: Colors.amber),
-        onPressed: () {},
+        onPressed: onTap ?? () {},
         child: Icon(
           icon ?? Icons.add,
           color: Colors.black,

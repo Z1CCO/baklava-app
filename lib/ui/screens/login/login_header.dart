@@ -32,6 +32,7 @@ class LoginHeader extends StatelessWidget {
             child: SizedBox(
               width: 90,
               child: Image(
+                color: Colors.white,
                 image: AssetImage(
                   'assets/images/bak.png',
                 ),

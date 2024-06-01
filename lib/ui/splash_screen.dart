@@ -1,4 +1,4 @@
-import 'package:coffee_app/ui/login/auth/auth_page.dart';
+import 'package:coffee_app/ui/screens/login/auth/auth_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 

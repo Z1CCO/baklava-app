@@ -1,17 +1,17 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:coffee_app/ui/home/tabs/back.dart';
+import 'package:coffee_app/ui/screens/home/tabs/back.dart';
 import 'package:flutter/material.dart';
 
-class Baklava extends StatefulWidget {
-  const Baklava({
+class Tea extends StatefulWidget {
+  const Tea({
     super.key,
   });
 
   @override
-  State<Baklava> createState() => _BaklavaState();
+  State<Tea> createState() => _TeaState();
 }
 
-class _BaklavaState extends State<Baklava> {
+class _TeaState extends State<Tea> {
   late final Future? _future;
 
   @override
@@ -52,8 +52,9 @@ class _BaklavaState extends State<Baklava> {
         return Padding(
           padding: const EdgeInsets.all(4.0),
           child: BackItem(
-            name: 'assets/images/baklavaback.jpg',
+            name: 'assets/images/tea.jpg',
             list: posts,
+            categorya: 'Tea',
           ),
         );
       },

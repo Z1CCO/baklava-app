@@ -1,4 +1,4 @@
-import 'package:coffee_app/ui/home/view/my_container.dart';
+import 'package:coffee_app/ui/screens/home/view/my_container.dart';
 import 'package:coffee_app/ui/my_text.dart';
 import 'package:flutter/material.dart';
 
